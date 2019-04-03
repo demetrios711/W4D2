@@ -1,0 +1,17 @@
+<h1>Cats#index</h1>
+
+<ul>
+    <% @cats.each do |cat| %>
+        <li>
+            <ul>
+                <li><%= cat.name %></li>
+                <li><%= cat.age %></li>
+                <li><%= cat.color %></li>
+                <li><%= cat.sex %></li>
+                <li><%= link_to "Show Cat Information", cat_url(cat) %></li>
+            </ul>
+        </li>
+        </br>
+
+    <% end %>
+</ul>
